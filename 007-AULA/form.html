@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Continuação Formulários</h1>
+    </header>
+
+    <main>
+        <h2>Formulário</h2>
+        <form action="">
+
+            <!-- fieldset = segmenta visualmente o formulário -->
+            <fieldset>
+                <!-- legend =  -->
+                <legend align="center"> Dados Pessoais </legend>
+
+                <!-- Caixinha de nome -->
+                <label for="nome">   Nome: </label>
+                <input type="text" name="nome" id="nome">
+                <!-- Fim caixinha de nome -->
+
+                <br><br>
+
+                <!-- Caixinha de data de nascimento -->
+                <label for="data_nascimento"> Data de nascimento: </label>
+                <!-- data = apenas data -->
+                <input type="date" name="data_nascimento" id="data_nascimento">
+                <!-- datetime-local = data e hora juntos -->
+                <input type="datetime-local">
+                <!-- time = apenas hora -->
+                <input type="time">
+                <!-- Fim da caixinha de data de nascimento -->
+
+                <br><br>
+                
+                <!-- Caixinha de número  -->
+                <label for="filhos"> Quantidade de filhos: </label>
+                <input type="number" name="filhos" id="filhos" min="0" max="69" step="1" value="5">
+                <!-- Fim da caixinha de número -->
+                
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>É MEU ISSO</p>
+    </footer>
+</body>
+</html>
