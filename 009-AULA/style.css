@@ -1,0 +1,38 @@
+body{
+    background-color: red;
+    /* alinhamento do texto */
+    text-align: center;
+}
+
+h2{
+    font-size: 90px;
+    color: yellow;
+    /* estilo do texti */
+    font-style: italic;
+    /* alterar familia da fonte */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+}
+
+/* Estilização via tag */
+ul{
+    /* Cor de fundo */
+    background-color: aqua;
+    /* Tirar bolinhas */
+    list-style: none;
+
+}
+li{
+    /* Cor fundo */
+    background-color: black;
+    /* Cor texto */
+    color: white;
+    /* largura do elemento */
+    width:300px ;
+    /* altura do elemento */
+    height:50px ;
+    /* tamanho da fonte */
+    font-size: 40px;
+    /* criar a distancia dos elementos */
+    margin-left:auto ;
+    margin-right:auto ;
+}
