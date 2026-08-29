@@ -1,0 +1,41 @@
+header{
+    background-color:#CCCC;
+    color: white;
+    padding: 120px;
+    font-size: 20px;
+
+}
+main{
+    background-color: green;
+    
+}
+       
+footer{
+    background-color: grey;
+    padding: 90px;
+    color: white;
+    font-size: 25px;
+}
+
+.bloco{
+    border: 30px solid red;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+}
+
+#espaçamento1{
+    padding: 35px;
+}
+
+#espaçamento2{
+    padding: 35px;
+}
