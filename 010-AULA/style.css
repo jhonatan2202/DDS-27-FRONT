@@ -48,6 +48,70 @@
 
     #caixa-unica{
         padding: 10px;
-        border: 5px purple;
+        border: 5px solid purple;
         background-color: #ede9fe;
+    }
+
+    /* Seletor com filtro */
+    div p{
+        color: blue;
+    }
+
+    /* Seleciona todos o "p" que são filhos diretos da classe específica*/
+    .pai-direto > p{
+        color: green;
+        padding: 5px;
+    }
+
+    /* Seleciona todo o "p" que vem logo após um h3 */
+    h2 + h3 + p{
+        color: red;
+    }
+
+    /* Seleciona todos o "p" que vem após o h4*/
+    h4 ~ p {
+        background-color: blueviolet;
+        color: yellow;
+    }
+
+    /*Seleciona o tipo de input especifico  */
+    input[type="text"]{
+        border: 2px solid orange;
+        pad: 8px;
+        margin-right: 10px;
+    }
+
+    /* Seleciona todos os links que tenham esse valor no href */
+    a[href*="microsoft"]{
+        color: green;
+        font-weight: bolder;
+    }
+
+    /* Mesmo estilo para duas ou mais tags,ids ou classes */
+    h5,h6{
+        color: purple;
+        margin: 5px 0px;
+        font-weight: bolder;
+    }
+
+    /* Seleciona o elemento que tem as duas classes ao mesmo tempo */
+    .botao.ativo{
+        color: red;
+        padding: 50px;
+        font-size: 30px;
+    }
+
+    /* Seleciona o "p" desde que tenha a class aviso */
+    p.aviso{
+        color: green;
+    }
+
+    /* Selecionar div com o id especifico */
+    div#painel{
+        background-color: red;
+        padding: 10px;
+    }
+
+    a[href="#"]{
+        color: violet;
     }
