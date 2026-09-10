@@ -164,3 +164,40 @@ input:disabled{
     color: gold;
     font-size: 20px;
 }
+
+/* PSEUDO ELEMENTOS */
+
+/* Inserir elementos antes dos elementos */
+h2::before{
+    content: " 👌😏";
+}
+/* Inserir elementos depois dos elementos */
+h2::after{
+    content: " 🎶😎";
+}
+
+/* Estliza o texto dentro dos inputs */
+input::placeholder{
+    color: rebeccapurple;
+    font-style: italic;
+}
+
+/* ESTILIZA O TEXTO SELECIONADO */
+::selection{
+    background-color: yellowgreen;
+    color: green;
+}
+
+/* ESTILIZA OS MARCADORES DE TEXTO */
+.lista-marker li::marker{
+    color: #03f182;
+    font-size: 50px;
+}
+
+li::before{
+    content: "";
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+}
