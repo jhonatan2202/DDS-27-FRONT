@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+}
+
+#Titulo-principal{
+    font-size: 50px;
+    color: crimson;
+    margin: 0px;
+}
+
+.icons{
+    font-size: 60px;
+    color: orange;
+    transition: 1s;
+    border: 2px solid;
+}
+
+.icons:hover{
+    color: white;
+    background-color: rebeccapurple;
+    font-size: 100px;
+    transition: 1000000s;
+    rotate: 10000000000deg;
+}
+
