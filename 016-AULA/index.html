@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula + Bootstrap</title>
+
+    <!-- Importação do css do bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Barra de navegação -->
+      <nav
+        class="navbar bg-dark border-bottom border-body navbar-expand-lg"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqYmjrkvltlt76OwuLm4ZD166I_I4twVExzWrwM_tsKg&s"
+              alt="Logo Marca"
+              width="100px"
+              height="74px"
+            />
+            J&J Solutions</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Corpo -->
+    <main class="container-fluid">
+
+      <h1 class="text-center m-3 p-2">Ranking Bola de Ouro 2026</h1>
+
+      <!-- Criando div com classes do bootstrap -->
+      <!-- row - diz que a div é linha -->
+      <!-- g - gap entre os elementos -->
+      <div class="row g-3">
+        <!-- col - diz que a div é coluna -->
+        <!-- bg - controla o fundo da div -->
+        <!-- p - padding -->
+        <!-- text - cor do texto -->
+        <!-- md - breakpoint de tamanho médio >=700px -->
+        <!-- xl - breakpoint de tamanho grande >=1200px -->
+        <div class="col col-12 col-md-6 col-xl-3 bg-success p-5 text-white">
+          Ranking da Bola de Ouro
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-danger px-5 text-dark">
+          100% Seguro
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-info py-4 text-danger">
+          Pode confiar
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-warning pb-3 text-success">
+          Se prepara
+        </div>
+      </div>
+
+        <!-- Display Grid com Bootstrap -->
+         <h2 class="my-3">Display Grid</h2>
+         <div class="row gap-2">
+            <div class="p-2 text-white rounded-3 fs-1 bg-danger col-4">SE PREPARE...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-warning col-4">TA CHEGANDO O RANKING...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-success col-2">FIQUE ESPERTO...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-danger col-2">PEGA A PIPOCA...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-warning col-2">1 MINUTO...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-success col-2">ACABOU O TEMPO DE ESPERA</div>
+
+        <!-- Display Flex com Bootstrap -->
+         <h2 class="my-3">Display Flex</h2>
+         <div class="d-flex gap-3 p-3 justify-content-around align-items-center flex-wrap">
+            <div class="p-2 text-white rounded-3 fs-1 bg-danger">SE PREPARE...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-warning">TA CHEGANDO O RANKING...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-success">FIQUE ESPERTO...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-danger">PEGA A PIPOCA...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-warning">1 MINUTO...</div>
+            <div class="p-2 text-white rounded-3 fs-1 bg-success">ACABOU O TEMPO DE ESPERA</div>
+
+      <!-- Card group -->
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX1bO9c6CMCXrWS2y34nw1vgfm0oYMM90SNfw3Aus1zw&s"
+            class="card-img-top"
+            alt="messi"
+            width="100%"
+            height="600px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">2º Lugar: Lionel Messi(Argentina)</h5>
+            <p class="card-text">
+              Lionel Messi é um dos maiores jogadores da história do futebol.
+              Após construir uma carreira extraordinária, conquistando diversos
+              títulos individuais e coletivos, Messi se destacou por sua
+              habilidade, visão de jogo, dribles e capacidade de decidir
+              partidas importantes. Campeão mundial com a Argentina, ele
+              continua sendo uma das maiores referências do futebol.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTubwfzttnP0Evv0pyPwdZtR6rJRi3VdRFszSGmnGJSpg&s=10"
+            class="card-img-top"
+            alt="neymar"
+            width="100%"
+            height="600px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">1º Lugar: Neymar JR(Brasil)</h5>
+            <p class="card-text">
+              Neymar da Silva Santos Jr. é um dos grandes nomes do futebol
+              brasileiro. Após fazer uma carreira extraordinária, conquistando
+              títulos importantes, Neymar se destacou por sua habilidade,
+              criatividade, dribles e capacidade de criar jogadas decisivas.
+              Ídolo da Seleção Brasileira, ele continua sendo uma das principais
+              referências do futebol brasileiro.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LIQLmHbAf8-U04fLPo0maikmFo8qjm14TzYHLOl-1AWVKJQiRu-o2NU&s=10"
+            class="card-img-top"
+            alt="cristiano ronaldo"
+            width="100%"
+            height="600px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">3º Lugar: Cristiano Ronaldo(Portugal)</h5>
+            <p class="card-text">
+              Cristiano Ronaldo é um dos maiores jogadores da história do
+              futebol. Após construir uma carreira extraordinária, conquistando
+              inúmeros títulos e prêmios individuais, Cristiano se destacou por
+              sua velocidade, força, finalização e capacidade de marcar gols
+              decisivos. Campeão europeu com Portugal, ele se tornou uma das
+              maiores referências do futebol mundial.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Top -->
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Clique aqui para ver o resto da lista
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                4.Kylian Mbappé (França),
+                5.Vinícius Júnior (Brasil),
+                6.Erling Haaland (Noruega),
+                7.Lamine Yamal (Espanha),
+                8.Jude Bellingham (Inglaterra),
+                9.Rodri (Espanha),
+                10.Mohamed Salah (Egito),
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body"><img src="https://stories.cnnbrasil.com.br/wp-content/uploads/sites/9/2024/10/cropped-bola-de-ouro-quanto-vale.jpg" alt="bola de ouro" width="200px" height="200px"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Não gostei
+              </button>
+              <button type="button" class="btn btn-primary">
+                Gostei
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodape -->
+    <footer></footer>
+
+    <!-- Importação do javascript do bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
